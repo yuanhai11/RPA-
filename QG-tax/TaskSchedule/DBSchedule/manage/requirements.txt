@@ -1,0 +1,8 @@
+pymysql==0.9.3
+docx==0.2.4
+xlrd==1.2.0
+requests==2.23.0
+pywin32==227
+flask==1.1.2
+flask-restx==0.2.0
+werkzeug==0.16.1

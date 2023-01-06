@@ -1,0 +1,9 @@
+xlrd==1.2.0
+requests==2.23.0
+pywin32==228
+flaskrestplus==0.13.0
+pycryptodome==3.9.7
+kafka-python==2.0.2
+python-decouple==3.3
+xlutils==2.0.0
+pyinstaller==4.0

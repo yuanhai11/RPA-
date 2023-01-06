@@ -1,0 +1,1026 @@
+C:\Users\20945\AppData\Local\Programs\Python\Python38\python.exe D:/RPA/zl-rpa/incomeTaxFiling/发票获取/本地prod/test.py
+'set' object has no attribute 'get'
+[{'http': '125.79.241.48:47325'}]
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+
+    <script>
+      document.write(
+        '<script src="pubutil.js?v=' +
+          parseInt(new Date().getMinutes() / 10) +
+          '"><\/script>'
+      );
+    </script>
+
+    <script>
+      document.write(
+        '<script src="' +
+          zjhost +
+          "/" +
+          cdnname +
+          '/public/dist/js/jquery.js"><\/script>'
+      );
+      document.write(
+        '<link rel="stylesheet" href="' +
+          zjhost +
+          "/" +
+          cdnname +
+          '/public/dist/css/bootstrap.css">'
+      );
+      document.write(
+        '<link rel="stylesheet" href="' +
+          zjhost +
+          "/" +
+          cdnname +
+          '/public/dist/css/zjgf_button.css">'
+      );
+      document.write(
+        '<script src="' +
+          zjhost +
+          "/" +
+          cdnname +
+          '/public/dist/js/jquery.dataTables.js"><\/script>'
+      );
+      document.write('<link rel="stylesheet" href="pub.css">');
+      document.write('<link rel="stylesheet" href="zjplugin.css">');
+      document.write('<script src="funcdata.js?v=' + version + '"><\/script>');
+      document.write('<script src="zjplugin.js?v=' + version + '"><\/script>');
+      document.write('<script src="pub.js?v=' + version + '"><\/script>');
+      document.write('<script src="util/skp.js?v=' + version + '"><\/script>');
+      document.write(
+        '<script src="util/jquery.qrcode.min.js?v=' + version + '"><\/script>'
+      );
+      document.write(
+        '<script src="util/base64.js?v=' + version + '"><\/script>'
+      );
+      document.write(
+        '<script src="util/jsencrypt.min.js?v=' + version + '"><\/script>'
+      );
+      document.write(
+        '<script src="util/publicKey.js?v=' + version + '"><\/script>'
+      );
+      document.write(
+        '<script src="util/md5.min.js?v=' + version + '"><\/script>'
+      );
+      document.write(
+        '<script src="util/jquery.timers-1.2.js?v=' + version + '"><\/script>'
+      );
+      document.write('<script src="login.js?v=' + version + '"><\/script>');
+      document.write(
+        '<link rel="stylesheet" href="login.css?v=' + version + '">'
+      );
+      document.write('<script src="index.js?v=' + version + '"><\/script>');
+      document.write('<script src="hjjc.js?v=' + version + '""><\/script>');
+      document.write(
+        '<link rel="stylesheet" href="index.css?v=' + version + '">'
+      );
+    </script>
+  </head>
+  <body class="minwidth minheight">
+    <object
+      id="pkiAtvNew"
+      classid="CLSID:3C474273-7F8B-4690-8C34-855C4528658D"
+      style="display: none"
+    ></object>
+
+    <div class="body">
+      <img class="bj" src="/zjgfcdn/zjimg/home/bj.png" />
+      <div class="lefttitle">
+        <img class="logo" src="/zjgfcdn/zjimg/header/logo-zj.png" />
+        <!--<label class="text">国家税务总局浙江省电子税务局</label>-->
+      </div>
+
+      <div class="rightmenu">
+        <a href="other/czgc/index.html" class="right-item">
+          <img src="/zjgfcdn/zjimg/home/bz.png" />
+          <span>帮助</span>
+        </a>
+        <a href="xzzx/index.html" class="right-item">
+          <img src="/zjgfcdn/zjimg/home/xz.png" />
+          <span>下载</span>
+        </a>
+        <a id="hjjcbtn" class="right-item">
+          <img src="/zjgfcdn/zjimg/home/hjjc.png" />
+          <span>环境检测</span>
+        </a>
+        <a
+          target="_blank"
+          href="https://etax.shanghai.chinatax.gov.cn/wszx-web/bszm/apps/views/beforeLogin/csj/csj.html"
+          class="right-item"
+        >
+          <img src="/zjgfcdn/zjimg/csjyth/csjyth.png" />
+          <span>长三角</span>
+        </a>
+      </div>
+
+      <a id="loginopen">
+        <img src="/zjgfcdn/zjimg/home/dl.png" />
+        <div>登录</div>
+      </a>
+
+      <div class="top-menu">
+        <span id="wddb" class="top-menu-item">
+          <span>
+            <img src="/zjgfcdn/zjimg/home/wddb.png" />
+          </span>
+          <div>
+            <img src="/zjgfcdn/zjimg/home/text/wddb.png" />
+          </div>
+        </span>
+        <span id="wyyy" class="top-menu-item">
+          <span>
+            <img src="/zjgfcdn/zjimg/home/wyyy.png" />
+          </span>
+          <div>
+            <img src="/zjgfcdn/zjimg/home/text/wyyy.png" />
+          </div>
+        </span>
+        <span id="gxfw" class="top-menu-item">
+          <span>
+            <img src="/zjgfcdn/zjimg/home/gxfw.png" />
+          </span>
+          <div>
+            <img src="/zjgfcdn/zjimg/home/text/gxfw.png" />
+          </div>
+        </span>
+        <span id="tzgg" class="top-menu-item">
+          <span>
+            <img src="/zjgfcdn/zjimg/home/tzgg.png" />
+          </span>
+          <div>
+            <img src="/zjgfcdn/zjimg/home/text/tzgg.png" />
+          </div>
+        </span>
+      </div>
+
+      <div class="luobobox">
+        <img src="/zjgfcdn/zjimg/plugin/tzicon.png" />
+
+        <div id="homelunbo" class="lunbocontent">
+          <a
+            style="color: red"
+            href="/zjgfdzswj/main/other/tzgg/single.html?xh=2022062901"
+            class="lunbo-item"
+            >社保费缓缴扩围政策提醒</a
+          >
+          <a style="color: red" onclick="showCustomAlert()" class="lunbo-item"
+            >浙江省电子税务局登录模式调整通知</a
+          >
+          <a
+            target="_blank"
+            href="/zjgfcdn/static/notice.html"
+            style="color: red"
+            class="lunbo-item"
+            >您的需求是我们纳税服务的最大动力。</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-menu">
+      <span
+        id="wdxx"
+        class="bottom-menu-item"
+        style="background-image: url('/zjgfcdn/zjimg/home/wdxx_bg.png')"
+      >
+        <img src="/zjgfcdn/zjimg/home/wdxx.png" />
+        <div>我的信息</div>
+      </span>
+      <span
+        id="wybs"
+        class="bottom-menu-item"
+        style="background-image: url('/zjgfcdn/zjimg/home/wybs_bg.png')"
+      >
+        <img src="/zjgfcdn/zjimg/home/wybs.png" />
+        <div>我要办税</div>
+      </span>
+      <span
+        id="wycx"
+        class="bottom-menu-item"
+        style="background-image: url('/zjgfcdn/zjimg/home/wycx_bg.png')"
+      >
+        <img src="/zjgfcdn/zjimg/home/wycx.png" />
+        <div>我要查询</div>
+      </span>
+      <span
+        id="hdzx"
+        class="bottom-menu-item"
+        style="background-image: url('/zjgfcdn/zjimg/home/hdzx_bg.png')"
+      >
+        <img src="/zjgfcdn/zjimg/home/hdzx.png" />
+        <div>互动中心</div>
+      </span>
+      <span
+        id="gzfw"
+        class="bottom-menu-item"
+        style="background-image: url('/zjgfcdn/zjimg/home/gzfw_bg.png')"
+      >
+        <img src="/zjgfcdn/zjimg/home/gzfw.png" />
+        <div>公众服务</div>
+      </span>
+    </div>
+
+    <div style="margin-top: 80px"></div>
+    <div id="footer"></div>
+
+    <!--登录弹出框DOM-->
+    <div class="loginpart hidden">
+      <div class="zj-mask"></div>
+      <div class="loginbox">
+        <div class="login-big-nav one">
+          <a
+            href="#qylogin"
+            class="login-big-nav-item active"
+            style="width: 25%"
+          >
+            企业业务
+          </a>
+          <a href="#zrrlogin" class="login-big-nav-item" style="width: 35%">
+            自然人业务
+          </a>
+          <a href="#sszylogin" class="login-big-nav-item" style="width: 38%">
+            代理业务
+          </a>
+        </div>
+
+        <div class="login-body">
+          <div id="qylogin">
+            <div class="login-nav">
+              <a id="yhmA" href="#yhm" class="active"> 用户名登录 </a>
+              <a href="#ca"> CA登录 </a>
+              <a href="#swsb"> 税控设备登录 </a>
+              <a href="#byh"> 报验户登录 </a>
+              <a href="#sbf"> 社保代征户登录 </a>
+              <span class="loginclose"> X </span>
+            </div>
+            <div>
+              <div id="yhm">
+                <div id="yhmwrapper">
+                  <div class="zj-input-group">
+                    <div class="zj-input-item code">
+                      <span class="imgspan">
+                        <img src="/zjgfcdn/zjimg/home/login/username.png" />
+                      </span>
+                      <input
+                        id="username"
+                        placeholder="社会信用代码/纳税人识别号"
+                      />
+                    </div>
+
+                    <div class="zj-input-item">
+                      <span class="imgspan">
+                        <img src="/zjgfcdn/zjimg/home/login/password.png" />
+                      </span>
+                      <input id="password" type="password" placeholder="密码" />
+                      <span class="eye-icon">
+                        <img src="/zjgfcdn/zjimg/home/login/eye.png">
+                      </span>
+                    </div>
+
+                    <div class="zj-input-item code">
+                      <span class="imgspan">
+                        <img src="/zjgfcdn/zjimg/home/login/tpyzm.png" />
+                      </span>
+                      <input class="vcode" id="yhmcode" placeholder="验证码" />
+                      <span class="codespan">
+                        <img
+                          class="codeimg"
+                          id="yhmimg"
+                          src="/zjgfdzswj/kaptcha.jpg"
+                        />
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="fogetpass">
+                    <a id="hjjc-a-btn" style="float: left; cursor: pointer"
+                      >环境检测</a
+                    >
+                    <!-- <a href="/zjgfdzswj/main/user/forgetpwd/index.html">忘记密码 ?</a> -->
+                    <a href="/CgsSBWeb/page/forgetpwd/index.html">忘记密码 ?</a>
+                  </div>
+
+                  <div class="login-btns">
+                    <a id="yhmlogin" class="loginbtn primary">登录</a>
+                    <!-- <a href="/zjgfdzswj/main/user/register/index.html" class="loginbtn warning">注册</a> -->
+                    <a
+                      href="/CgsSBWeb/page/registerZrr/index.html"
+                      class="loginbtn warning"
+                      >注册</a
+                    >
+                  </div>
+
+                  <!--<img id="qrcodebtn" class="bottom-right" src="/zjgfcdn/zjimg/home/login/ewm2.png">-->
+                </div>
+                <!--<div id="ewmwrapper" class="hidden">-->
+                <!--<div class="codeDiv" id="codeDiv">-->
+
+                <!--</div>-->
+                <!--<div style="text-align: center;margin-top: 20px;">-->
+                <!--打开 浙江税务APP 扫码登录-->
+                <!--</div>-->
+
+                <!--<img id="qrcode-back-btn"  class="bottom-right" src="/zjgfcdn/zjimg/home/login/ewm1.png">-->
+                <!--</div>-->
+              </div>
+
+              <div id="ca" class="hidden">
+                <div class="zj-input-group">
+                  <div class="zj-input-item">
+                    <span class="imgspan">
+                      <img src="/zjgfcdn/zjimg/home/login/username.png" />
+                    </span>
+                    <input
+                      id="capassword"
+                      type="password"
+                      placeholder="CA密码"
+                    />
+                    <span class="eye-icon">
+                        <img src="/zjgfcdn/zjimg/home/login/eye.png">
+                    </span>
+                  </div>
+                </div>
+
+                <div class="cadetection">
+                  <label>浙江省法人数字证书检测中...</label>
+                  <img
+                    style="width: 15px; height: 15px"
+                    src="/zjgfcdn/img/loading.gif"
+                  />
+                </div>
+
+                <div class="login-btns">
+                  <a id="calogin" class="loginbtn primary">登录</a>
+                </div>
+              </div>
+
+              <div id="swsb" class="hidden">
+                <div class="zj-input-group">
+                  <div class="zj-input-item">
+                    <span class="imgspan">
+                      <img src="/zjgfcdn/zjimg/home/login/username.png" />
+                    </span>
+                    <input
+                      id="swsbpassword"
+                      type="password"
+                      placeholder="税控盘/金税盘证书密码"
+                    />
+                    <span class="eye-icon">
+                        <img src="/zjgfcdn/zjimg/home/login/eye.png">
+                    </span>
+                  </div>
+                </div>
+                <div class="login-btns">
+                  <a id="swsblogin" class="loginbtn primary">登录</a>
+                </div>
+              </div>
+
+              <div id="byh" class="hidden">
+                <div class="zj-input-group">
+                  <div class="zj-input-item">
+                    <span class="imgspan">
+                      <img src="/zjgfcdn/zjimg/home/login/username.png" />
+                    </span>
+                    <input id="byhusername" placeholder="报验户" />
+                  </div>
+
+                  <div class="zj-input-item">
+                    <span class="imgspan">
+                      <img src="/zjgfcdn/zjimg/home/login/password.png" />
+                    </span>
+                    <input
+                      id="byhpassword"
+                      type="password"
+                      placeholder="请输入外经证编号对应的密码"
+                    />
+                    <span class="eye-icon">
+                        <img src="/zjgfcdn/zjimg/home/login/eye.png">
+                    </span>
+                  </div>
+
+                  <div class="zj-input-item code">
+                    <span class="imgspan">
+                      <img src="/zjgfcdn/zjimg/home/login/username.png" />
+                    </span>
+                    <input class="vcode" id="byhcode" placeholder="验证码" />
+                    <span class="codespan">
+                      <img
+                        class="codeimg"
+                        id="byhimg"
+                        src="/zjgfdzswj/kaptcha.jpg"
+                      />
+                    </span>
+                  </div>
+                </div>
+                <div class="fogetpass">
+                  <a href="/zjgfdzswj/main/user/wcjyforgetpwd/index.html"
+                    >忘记密码 ?</a
+                  >
+                </div>
+                <div class="login-btns">
+                  <a id="byhlogin" class="loginbtn primary">登录</a>
+                </div>
+              </div>
+
+              <div id="sbf" class="hidden">
+                <div class="zj-input-group">
+                  <div class="zj-input-item">
+                    <span class="imgspan">
+                      <img src="/zjgfcdn/zjimg/home/login/username.png" />
+                    </span>
+                    <input id="sbfusername" placeholder="请输入账户" />
+                  </div>
+
+                  <div class="zj-input-item">
+                    <span class="imgspan">
+                      <img src="/zjgfcdn/zjimg/home/login/password.png" />
+                    </span>
+                    <input
+                      id="sbfpassword"
+                      type="password"
+                      placeholder="密码"
+                    />
+                    <span class="eye-icon">
+                        <img src="/zjgfcdn/zjimg/home/login/eye.png">
+                    </span>
+                  </div>
+
+                  <div class="zj-input-item code">
+                    <span class="imgspan">
+                      <img src="/zjgfcdn/zjimg/home/login/username.png" />
+                    </span>
+                    <input class="vcode" id="sbfcode" placeholder="验证码" />
+                    <span class="codespan">
+                      <img
+                        class="codeimg"
+                        id="sbfimg"
+                        src="/zjgfdzswj/kaptcha.jpg"
+                      />
+                    </span>
+                  </div>
+                </div>
+                <div class="login-btns">
+                  <a id="sbflogin" class="loginbtn primary">登录</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hidden" id="zrrlogin">
+            <div class="login-nav">
+              <a
+                id="zrryhmA"
+                class="active"
+                style="float: left; margin-left: 15px"
+              >
+                用户名登录
+              </a>
+              <span class="loginclose"> X </span>
+            </div>
+
+            <div id="zrryhm">
+              <div id="zrryhmwrapper">
+                <div class="zj-input-group">
+                  <div class="zj-input-item code">
+                    <span class="imgspan">
+                      <img src="/zjgfcdn/zjimg/home/login/username.png" />
+                    </span>
+                    <input id="zrrusername" placeholder="手机号" />
+                  </div>
+
+                  <div class="zj-input-item">
+                    <span class="imgspan">
+                      <img src="/zjgfcdn/zjimg/home/login/password.png" />
+                    </span>
+                    <input
+                      id="zrrpassword"
+                      type="password"
+                      placeholder="密码"
+                    />
+                    <span class="eye-icon">
+                        <img src="/zjgfcdn/zjimg/home/login/eye.png">
+                    </span>
+                  </div>
+
+                  <div class="zj-input-item code">
+                    <span class="imgspan">
+                      <img src="/zjgfcdn/zjimg/home/login/tpyzm.png" />
+                    </span>
+                    <input class="vcode" id="zrryhmcode" placeholder="验证码" />
+                    <span class="codespan">
+                      <img
+                        class="codeimg"
+                        id="zrryhmimg"
+                        src="/zjgfdzswj/kaptcha.jpg"
+                      />
+                    </span>
+                  </div>
+                </div>
+                <div class="fogetpass">
+                  <!-- <a href="/zjgfdzswj/main/user/forgetpwd/index.html">忘记密码 ?</a> -->
+                  <a href="/CgsSBWeb/page/forgetpwd/index.html">忘记密码 ?</a>
+                </div>
+
+                <div class="login-btns">
+                  <a id="zrryhmlogin" class="loginbtn primary">登录</a>
+                  <!-- <a href="/zjgfdzswj/main/user/register/index.html" class="loginbtn warning">注册</a> -->
+                  <a
+                    href="/CgsSBWeb/page/registerZrr/index.html"
+                    class="loginbtn warning"
+                    >注册</a
+                  >
+                </div>
+
+                <!--<img id="zrrqrcodebtn" class="bottom-right" src="/zjgfcdn/zjimg/home/login/ewm2.png">-->
+              </div>
+
+              <!--<div id="zrrewmwrapper" class="hidden">-->
+              <!--<div class="codeDiv" id="zrrcodeDiv">-->
+
+              <!--</div>-->
+              <!--<div style="text-align: center;margin-top: 20px;">-->
+              <!--打开 浙江税务APP 扫码登录-->
+              <!--</div>-->
+
+              <!--<img id="zrrqrcode-back-btn"  class="bottom-right" src="/zjgfcdn/zjimg/home/login/ewm1.png">-->
+              <!--</div>-->
+            </div>
+          </div>
+
+          <div class="hidden" id="sszylogin">
+            <div class="login-nav">
+              <a class="active" style="float: left; margin-left: 15px">
+                用户名登录
+              </a>
+              <span class="loginclose"> X </span>
+            </div>
+
+            <div id="sszyyhmwrapper">
+              <div class="zj-input-group">
+                <div class="zj-input-item code">
+                  <span class="imgspan">
+                    <img src="/zjgfcdn/zjimg/home/login/username.png" />
+                  </span>
+                  <input id="sszyusername" placeholder="用户名" />
+                </div>
+
+                <div class="zj-input-item code">
+                  <span class="imgspan">
+                    <img src="/zjgfcdn/zjimg/home/login/tpyzm.png" />
+                  </span>
+                  <input class="vcode" id="sszyyhmcode" placeholder="验证码" />
+                  <span class="codespan">
+                    <img
+                      class="codeimg"
+                      id="sszyyhmimg"
+                      src="/zjgfdzswj/kaptcha.jpg"
+                    />
+                  </span>
+                </div>
+              </div>
+
+              <div class="login-btns">
+                <a id="sszyyhmlogin" class="loginbtn primary">确认</a>
+              </div>
+
+              <!--<img id="sszyqrcodebtn" class="bottom-right" src="/zjgfcdn/zjimg/home/login/ewm2.png">-->
+            </div>
+
+            <!--<div id="sszyewmwrapper" class="hidden">-->
+            <!--<div  class="codeDiv" id="sszycodeDiv">-->
+
+            <!--</div>-->
+            <!--<div style="text-align: center;margin-top: 20px;">-->
+            <!--打开 浙江税务APP 扫码登录-->
+            <!--</div>-->
+
+            <!--<img id="sszyqrcode-back-btn"  class="bottom-right" src="/zjgfcdn/zjimg/home/login/ewm1.png">-->
+            <!--</div>-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="selectbsybox" class="loginyzpart hidden">
+      <div class="zj-mask"></div>
+      <div class="yzloginbox">
+        <div class="login-big-nav yzone">
+          <a
+            id="selectname"
+            href="#qylogin"
+            class="login-big-nav-item active"
+            style="width: 25%"
+          >
+            企业用户
+          </a>
+        </div>
+        <div class="login-body">
+          <div id="qyVerify">
+            <div>
+              <div class="yz-title">
+                <span id="bsryyz">办税人员验证</span>
+                <!--<a id="yz-addbsy" style="float: right;color: red;cursor: pointer;">添加办税员</a>-->
+              </div>
+
+              <div class="yz-group">
+                <div class="yz-item">
+                  <span class="arrow"></span>
+                  <span id="bsryxzname" class="name">办税人员选择</span>
+
+                  <div id="bsysfxz" class="content">
+                    <input
+                      type="text"
+                      style="width: 100%"
+                      class="yz-input"
+                      name="bsysf"
+                      readonly
+                      id="bsysf"
+                    />
+                  </div>
+                </div>
+
+                <div class="hidden">
+                  <input type="hidden" id="uuidxh" />
+                  <input type="hidden" id="loginuuidxh" />
+                  <input type="hidden" id="changeuuidxh" />
+                  <input type="hidden" id="user_type" />
+                  <input type="hidden" id="bizNo" />
+
+                  <input type="hidden" id="yz-sjhm" />
+                  <input type="hidden" id="yz-name" />
+                  <input type="hidden" id="yz-sfzjhm" />
+                </div>
+
+                <div id="yzfsbox" class="isSelectedBsy yz-item hidden">
+                  <div class="name">验证方式</div>
+                  <div class="content">
+                    <div>
+                      <!-- <label class="yz-radio" for="smrz"><input onclick="selectYzfs(this)" value="3" name="yzfs" id="smrz" type="radio"><i></i>实名认证</label> -->
+                      <label class="yz-radio" for="mm"
+                        ><input
+                          onclick="selectYzfs(this)"
+                          value="1"
+                          name="yzfs"
+                          id="mm"
+                          type="radio"
+                        /><i></i>密码</label
+                      >
+                      <!--<label class="yz-radio hidden" for="sjyzm"><input onclick="selectYzfs(this)"  value="2" name="yzfs" id="sjyzm" type="radio"><i></i>手机短信验证码</label>-->
+                      <label class="yz-radio" for="ddyzm"
+                        ><input
+                          onclick="selectYzfs(this)"
+                          value="4"
+                          name="yzfs"
+                          id="ddyzm"
+                          type="radio"
+                        /><i></i>钉钉验证码</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div id="yzfscontent" class="isSelectedBsy hidden">
+                  <!--<div id="sjyzmbox" class="yz-item yztype hidden">-->
+                  <!--<div class="name">-->
+                  <!--短信验证码-->
+                  <!--</div>-->
+                  <!--<div class="content">-->
+                  <!--<div class="yz-dxyzm">-->
+                  <!--<input class="yz-input" id="yz-dxyzm" type="text">-->
+                  <!--<span class="yzmbtn" id="yz-yzmbtn">获取验证码</span>-->
+                  <!--<span class="yzmbtn hidden" id="yz-seconds">获取验证码</span>-->
+                  <!--</div>-->
+                  <!--</div>-->
+                  <!--</div>-->
+                  <div id="mmbox" class="yz-item yztype hidden">
+                    <div class="name">输入密码</div>
+                    <div class="content">
+                      <input
+                        id="yz-mm"
+                        class="yz-input"
+                        style="width: 100%"
+                        placeholder="自然人用户登录的密码"
+                        type="password"
+                      />
+                    </div>
+                  </div>
+                  <div id="smrzbox" class="yz-item yztype hidden">
+                    <img id="yz-img" alt="" />
+                    <div>打开支付宝扫码认证，认证成功点击登录。</div>
+                  </div>
+                  <div id="ddbox" class="yz-item yztype hidden">
+                    <div class="name">钉钉验证码</div>
+                    <div class="content">
+                      <div class="yz-dxyzm">
+                        <input class="yz-input" id="yz-ddyzm" type="text" />
+                        <span class="yzmbtn" id="yz-dd-yzmbtn">获取验证码</span>
+                        <span class="yzmbtn hidden" id="yz-dd-seconds"
+                          >获取验证码</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              text-align: left;
+              margin-top: 20px;
+              padding-left: 15px;
+              text-indent: 2em;
+              line-height: 25px;
+            "
+          >
+            尊敬的纳税人，因服务升级调整，电子税务局实名认证登录功能暂停，您可通过查看<a
+              target="_blank"
+              href="/SignCheck/czgc/DLCZSC.htm"
+              >《电子税务局用户登录操作手册》</a
+            >了解最新的登录方式，给您带来的不便敬请谅解！
+          </div>
+          <div id="fogetpass" class="fogetpass hidden">
+            <!-- <a href="/zjgfdzswj/main/user/forgetpwd/index.html">忘记密码 ?</a> -->
+            <a href="/CgsSBWeb/page/forgetpwd/index.html">忘记密码 ?</a>
+          </div>
+          <div
+            id="yz-btns"
+            class="isSelectedBsy login-btns hidden"
+            style="margin-top: 40px"
+          >
+            <a id="yz-close" class="loginbtn warning">关闭</a>
+            <a id="yz-login" class="loginbtn primary">登录</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="addbsybox" class="loginyzpart hidden">
+      <div class="zj-mask"></div>
+      <div class="yzloginbox">
+        <div class="login-big-nav yzone">
+          <a class="login-big-nav-item active" style="width: 25%">
+            添加办税员
+          </a>
+        </div>
+        <div class="login-body">
+          <div style="padding-top: 20px">
+            <div class="yz-group">
+              <div class="yz-item">
+                <span class="name">姓名<em>*</em></span>
+                <div class="content">
+                  <input
+                    type="text"
+                    style="width: 100%"
+                    class="yz-input"
+                    id="re-xmimg"
+                  />
+                </div>
+              </div>
+              <div class="yz-item">
+                <span class="name">手机号码<em>*</em></span>
+                <div class="content">
+                  <input
+                    type="text"
+                    style="width: 100%"
+                    class="yz-input"
+                    id="re-sjhm"
+                  />
+                </div>
+              </div>
+              <div class="yz-item">
+                <span class="name">身份证号码<em>*</em></span>
+                <div class="content">
+                  <input
+                    type="text"
+                    style="width: 100%"
+                    class="yz-input"
+                    id="re-sfzjhm"
+                  />
+                </div>
+              </div>
+              <div class="yz-item">
+                <span class="name">密码<em>*</em></span>
+                <div class="content">
+                  <input
+                    type="password"
+                    style="width: 100%"
+                    class="yz-input"
+                    id="re-dlmm"
+                  />
+                </div>
+              </div>
+              <div class="yz-item">
+                <span class="name">确认密码<em>*</em></span>
+                <div class="content">
+                  <input
+                    type="password"
+                    style="width: 100%"
+                    class="yz-input"
+                    id="re-dlmm1"
+                  />
+                </div>
+              </div>
+              <div id="addBsyYzm" class="yz-item hidden">
+                <span class="name">验证码<em>*</em></span>
+                <div class="content">
+                  <input
+                    type="text"
+                    style="width: 100%"
+                    class="yz-input"
+                    id="re-yzm"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            id="re-btns"
+            class="isSelectedBsy login-btns"
+            style="margin-top: 40px"
+          >
+            <a id="re-back" class="loginbtn primary">返回</a>
+            <a id="re-close" class="loginbtn warning">关闭</a>
+            <a id="re-login" class="loginbtn primary">确定</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="hjjcpanel" class="panelbox">
+      <div class="zj-mask"></div>
+      <div class="panelbody">
+        <div class="panelheader">
+          <span>环境检测结果反馈</span>
+          <span id="hjjc-close" class="panel-close">x</span>
+        </div>
+        <div class="panelcontent row">
+          <div class="col-xs-3 panel-l">
+            <img src="/zjgfcdn/zjimg/hjjc/tp1.png" />
+            <div>检测结果:<span id="jcjg"></span></div>
+          </div>
+
+          <div class="col-xs-8 panel-r">
+            <div class="hjjc-title">本地环境检测</div>
+
+            <div id="system" class="hjjc-item">
+              <span>电脑系统:</span>
+            </div>
+            <div id="brower" class="hjjc-item">
+              <span>浏览器:</span>
+            </div>
+
+            <div id="canum" class="hjjc-item"></div>
+            <div id="skp" class="hjjc-item">
+              <span>税控设备连接情况:</span>
+            </div>
+            <div id="network" class="hjjc-item"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="yhxxpanel" class="panel-box hidden">
+      <div class="zj-mask"></div>
+      <div class="panelbody">
+        <div
+          class="panelheader"
+          style="
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+            color: black;
+          "
+        >
+          <span>国家税务总局浙江省税务局电子税务局用户协议</span>
+        </div>
+        <div class="panelcontent">
+          <div class="para">
+            <p>
+              一、用户在使用国家税务总局浙江省税务局建设的“电子税务局”网站（<a
+                href="https://etax.zhejiang.chinatax.gov.cn/"
+                >https://etax.zhejiang.chinatax.gov.cn/</a
+              >，下称“电子税务局”或“本网站”）之前（包括但不限于电子税务局提供的其他客户端应用服务），请务必认真阅读、理解《国家税务总局浙江省税务局电子税务局用户协议》（下称“本协议”）的相关内容。
+            </p>
+            <p>
+              二、国家税务总局浙江省税务局按照本协议以及相关操作指引，为浙江省（不包含宁波市）辖区范围内的纳税人免费提供基于互联网以及移动网络的电子税务局相关服务。本网站提供操作手册供用户使用时参照，如果平台功能变化，操作手册会及时更新。如因用户个人原因未按照本网站提供的操作手册进行操作或操作不当等，所导致用户出现的任何损失由用户自行承担，本网站不承担任何责任。
+            </p>
+            <p>
+              三、用户使用本网站服务，即表示用户接受《国家税务总局浙江省税务局电子税务局用户协议》以及本网站公示的各项规则、规范。
+            </p>
+            <p>
+              四、国家税务总局浙江省税务局有权根据实际情况变更本协议部分内容，并通过电子税务局进行公告，不再对用户单独通知。变更后的协议一经公告，立即自动生效。用户在变更信息发布之后继续使用本网站的，视为用户同意且接受该变更的内容。
+            </p>
+            <p>
+              五、用户须确保个人账户和密码的安全，并保证其账户和密码均由其本人掌握和使用。任何登录用户办税账户的使用者均被视为用户本人。用户须对其账户的一切行为负责，因用户个人原因导致账户密码泄露，造成用户自身、电子税务局系统或者其他用户遭受损失的，由该用户承担全部责任。如因不可抗拒的因素，导致用户资料泄露、丢失、被盗用或造成损失的，本网站对此不负责任。
+            </p>
+            <p>
+              六、用户不得利用本网站损害其他使用者的合法权益，不得利用本网站直接或间接地从事违反中华人民共和国法律、国际公约以及社会公序良俗的行为。用户在使用本网站服务过程中，须对自己使用服务的行为及上传的资料真实性及合法性承担全部责任，因用户提交非法或不实资料引起的一切后果，由用户本人负责。
+            </p>
+            <p>
+              七、用户提交、上传或发布的信息将仅对税务人员可见。国家税务总局浙江省税务局及下属各级机关依法管理用户相关信息及用户办税相关信息，并在法律规定范围内承担用户的涉税信息、商业秘密及个人隐私等的保密义务。用户的税收违法行为信息，或其他按法律规定应以公开、披露的信息，不属于保密范围。
+            </p>
+            <p>
+              八、用户在本网站提交、上传或发布的信息，以本网站服务器端接收到的信息为准。电子税务局局端保障用户提交、上传或发布的资料独立保存，不受篡改。若用户提交了错误资料或对服务器端存储、显示的数据有异议，用户应第一时间联系主管税务机关处理，并由用户承担相应的举证责任。若用户所提供的资料因意外灭失，无法查找或恢复的，用户须按照税务机关要求，再次提供相关资料。否则因此造成的损害，将由用户自行承担责任。
+            </p>
+            <p>
+              九、本网站中查询、显示的数据与金税三期核心征管系统及其辅助系统中的数据存在差异的，以金税三期核心征管系统及其辅助系统中存储的数据为准。
+            </p>
+            <p style="color: #53acf3">
+              十、《税务文书电子送达确认书》：为进一步便利纳税人办税，保护纳税人合法权益，税务机关自2020年4月1日起在全国范围内推行税务文书电子送达。签订本确认书前，请您知悉以下内容：电子送达税务文书的范围为税务机关税收征收管理中出具的各类文书，暂不包括税务处理决定书、税务行政处罚决定书（不含简易程序处罚）、税收保全措施决定书、税收强制执行决定书、阻止出境决定书以及税务稽查、税务行政复议过程中使用的税务文书；纳税人、扣缴义务人签署本确认书后，税务机关可以通过电子税务局送达电子税务文书。电子版式税务文书到达电子税务局的日期为送达日期；电子版式税务文书与纸质税务文书具有同等法律效力。纳税人、扣缴义务人需要纸质文书的，可自行下载打印，也可以到税务机关办税服务厅打印。
+            </p>
+            <p>
+              十一、本网站上生成的、一切加载有电子签名或电子印章的PDF文书，与纸质文书具有相同的法律效力。若用户仍需要纸质或其他模式的文书，请至税务机关办事窗口另行提出申请。
+            </p>
+            <p>
+              十二、电子税务局局端会定期或不定期地对提供服务的平台及相关设备进行检修或者维护。鉴于网络服务的特殊性（包括但不限于服务器的稳定性问题、线路或机器的故障问题、恶意的网络攻击等行为的存在及其他电子税务局无法控制的情形），电子税务局局端有权随时中断或中止本网站及其附属客户端的服务。电子税务局局端将尽可能及时通过网页公告、系统通知或其他合理方式通知受到影响的用户，并提供应急预案。但用户仍应根据实际的通知或公告，在法定期限内，到主管税务机关上门办理相关事宜。
+            </p>
+            <p>
+              十三、如发生下列任何一种情形，电子税务局局端有权随时中断或中止向用户提供本协议下的服务而无需对用户或任何第三方承担任何责任：
+            </p>
+            <p>(一)用户提供的个人资料不真实；</p>
+            <p>(二)用户违反法律法规、国家政策或本协议中规定的使用规则；</p>
+            <p>(三)用户违反相关税收管理规定中的其他情形。</p>
+            <p>
+              十四、电子税务局局端保留在适当时间不经通知而进行以下行为的权利：
+            </p>
+            <p>
+              (一)
+              基于合理原因，修改、中止或终止本网站或其任何部分的运行或访问；
+            </p>
+            <p>(二) 修改或变更本网站适用协议或协议条款；</p>
+            <p>
+              (三)
+              在进行定期或非定期维护、纠正错误或其他变更时，中断本网站或本网站任何部分的运行。
+            </p>
+            <p>
+              十五、若违反本协议，电子税务局局端可以自行决定且无需提前通知，对该用户在本网站上采取限制措施。
+            </p>
+            <p>
+              十六、本网站包含的所有文字、图表、图片、标识、声音、美术作品及计算机编码
+              (合称为“内容”)，包括但不限于这些内容的设计、结构、排序等，均属电子税务局所有或经有权主体许可给电子税务局使用。
+            </p>
+            <p>
+              十七、除本协议明确规定外，未经有权主体事先明确书面同意，任何媒体、互联网站和商业机构不得擅自转载本网站提供的信息和服务内容，如需转载，必须与相应提供单位直接联系获得合法授权。本网站所涉及到的版权归本网站所有，且受著作权法、专利法以及各类其他知识产权法的保护。
+            </p>
+            <p>
+              十八、所有与用户访问或使用本网站有关的事项，包括所有争议，将受中华人民共和国大陆地区法律管辖。
+            </p>
+            <p>
+              十九、因使用本网站而就本协议产生的争议，双方应立即秉承善意协商解决争议。若双方未能在合理时间内解决争议，任何一方可将争议提交调解，或向浙江省（不包含宁波市）有管辖权的人民法院提起诉讼。
+            </p>
+            <p>
+              二十、用户使用本网站而就行政行为产生的争议，适用行政复议法、行政诉讼法以及相关行政法律法规，不受前款规定约束。
+            </p>
+            <p style="text-align: right">国家税务总局浙江省税务局</p>
+          </div>
+          <div style="text-align: center; padding: 15px; font-size: 16px">
+            <div style="color: #53acf3; font-size: 14px; margin-bottom: 10px">
+              <input
+                style="vertical-align: text-bottom"
+                id="yhxyagree"
+                type="checkbox"
+                checked
+              /><span
+                >我已认真阅读并理解《税务文书电子送达确认书》全部内容，同意税务机关通过电子税务局/个人所得税APP、WEB端送达电子税务文书。</span
+              >
+            </div>
+            <button id="readedyhxy" class="zjgf_btn">同意</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="zxzxbtn"></div>
+    <div id="zxzxreminder" class="hidden">
+      <div class="zj-mask"></div>
+      <div class="zxzx-body">
+        <div id="zxzxclose"></div>
+      </div>
+    </div>
+    <div id="imgbox" class="hidden">
+      <div class="zj-mask"></div>
+      <img id="bigimg" src="" alt="" />
+    </div>
+
+    <div id="ywlogin" class="hidden">
+      <div class="zj-mask"></div>
+      <div class="ywloginbox">
+        <!-- <div id="yw-smlogin" class="ywlogin-item">
+            <label>刷脸登录</label>
+            <p>仅适用于法定代表人（业主）</p>
+        </div> -->
+        <div id="yw-mmlogin" class="ywlogin-item">
+          <label>密码登录</label>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+Process finished with exit code -1

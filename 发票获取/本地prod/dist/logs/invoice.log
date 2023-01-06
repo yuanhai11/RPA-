@@ -1,0 +1,129 @@
+2022-05-23 16:00:58,851 [DESKTOP-O9339PH] [invoice_over] [MainThread]  INFO [main] - kafka server is ['121.196.16.204:9091', '121.196.16.204:9092', '121.196.16.204:9093'],topic is [invoice_info]
+2022-05-23 16:00:59,001 [DESKTOP-O9339PH] [invoice_over] [MainThread]  INFO [main] - rpa worker started!
+2022-05-23 16:00:59,235 [DESKTOP-O9339PH] [range] [MainThread] WARNING [assign] - No partition metadata for topic invoice_info
+2022-05-23 16:00:59,389 [DESKTOP-O9339PH] [invoice_over] [MainThread]  INFO [main] - receive message: {"taxPwd":"M6LIMF","companyId":"404362","companyName":"水经注(杭州）科技合伙企业(有限合伙)","handleTaxName":"余起帆","localDate":"2022-05-22","taxAccount":"91330110MA7CUQ7D6C","handleTaxPwd":"zlcw1234","tenant_code":"ZH-383-20191217145410"}
+2022-05-23 16:00:59,453 [DESKTOP-O9339PH] [invoice_over] [MainThread]  INFO [main] - receive message: {"taxPwd":"K4Z9SE","companyId":"399410","companyName":"舟夜(杭州）科技合伙企业(有限合伙)","handleTaxName":"余起帆","localDate":"2022-05-22","taxAccount":"91330110MA7D6TQC7D","handleTaxPwd":"zlcw1234","tenant_code":"ZH-383-20191217145410"}
+2022-05-23 16:00:59,496 [DESKTOP-O9339PH] [invoice_over] [MainThread]  INFO [main] - receive message: {"taxPwd":"a12345678","companyId":"15523","companyName":"浙江邝时展览有限公司","handleTaxName":"姜建东","localDate":"2022-05-22","taxAccount":"91330105MA2KDWJLXM","handleTaxPwd":"a11111111","tenant_code":"ZH-383-20191217145410"}
+2022-05-23 16:00:59,538 [DESKTOP-O9339PH] [invoice_over] [MainThread]  INFO [main] - receive message: {"taxPwd":"zlcw1401","companyId":"392944","companyName":"杭州渊宸电子商务有限公司","handleTaxName":"牛瑞丽","localDate":"2022-05-22","taxAccount":"91330106MA7C1F2R0N","handleTaxPwd":"zlcw1401","tenant_code":"ZH-383-20191217145410"}
+2022-05-23 16:00:59,578 [DESKTOP-O9339PH] [invoice_over] [MainThread]  INFO [main] - receive message: {"taxPwd":"A12345678","companyId":"404779","companyName":"杭州市西湖区何达商务服务部","handleTaxName":"邹慧琳","localDate":"2022-05-22","taxAccount":"92330106MA7E7PNC3E","handleTaxPwd":"z1111111","tenant_code":"ZH-383-20191217145410"}
+2022-05-23 16:01:07,699 [DESKTOP-O9339PH] [invoice_over] [MainThread]  INFO [main] - receive message: {"taxPwd":"6DL8NN","companyId":"404733","companyName":"浙江甬亿盛通贸易有限公司","handleTaxName":"林娴哲","localDate":"2022-05-22","taxAccount":"91330108MA7DGXGW28","handleTaxPwd":"abc12306","tenant_code":"ZH-383-20191217145410"}
+2022-05-23 16:01:11,631 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_4]  INFO [handle_message] - 杭州市西湖区何达商务服务部获取cookie中失败,retry0次
+2022-05-23 16:01:14,376 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_1]  INFO [get_data_by_proxy] - get_data error
+2022-05-23 16:01:14,916 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_3]  INFO [get_data_by_proxy] - get_data error
+2022-05-23 16:01:15,057 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_2]  INFO [get_data_by_proxy] - get_data error
+2022-05-23 16:01:15,455 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_1]  INFO [dl] - [{'https': '114.99.2.135:46219'}]
+2022-05-23 16:01:15,983 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_3]  INFO [dl] - [{'https': '114.99.2.135:46219'}]
+2022-05-23 16:01:16,108 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_2]  INFO [dl] - [{'https': '114.99.2.135:46219'}]
+2022-05-23 16:01:20,504 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_2]  INFO [spider] - 浙江邝时展览有限公司,[{'https': '114.99.2.135:46219'}],浙江省通用电子发票,SPF,[]
+2022-05-23 16:01:20,535 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_1]  INFO [spider] - 舟夜(杭州）科技合伙企业(有限合伙),[{'https': '114.99.2.135:46219'}],浙江省通用电子发票,SPF,[]
+2022-05-23 16:01:20,977 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_3]  INFO [spider] - 杭州渊宸电子商务有限公司,[{'https': '114.99.2.135:46219'}],浙江省通用电子发票,SPF,[]
+2022-05-23 16:01:21,641 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_0]  INFO [get_data_by_proxy] - get_data error
+2022-05-23 16:01:22,715 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_0]  INFO [dl] - [{'https': '112.66.242.152:51718'}]
+2022-05-23 16:01:24,848 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_3]  INFO [get_data_by_proxy] - get_data error
+2022-05-23 16:01:24,908 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_2]  INFO [get_data_by_proxy] - get_data error
+2022-05-23 16:01:24,934 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_1]  INFO [get_data_by_proxy] - get_data error
+2022-05-23 16:01:25,906 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_3]  INFO [dl] - [{'https': '112.66.242.152:51718'}]
+2022-05-23 16:01:25,971 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_2]  INFO [dl] - [{'https': '112.66.242.152:51718'}]
+2022-05-23 16:01:25,983 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_1]  INFO [dl] - [{'https': 'too many requests'}]
+2022-05-23 16:01:25,985 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_1]  INFO [get_data_by_proxy] - get_data error
+2022-05-23 16:01:27,045 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_1]  INFO [dl] - [{'https': '112.66.242.152:51718'}]
+2022-05-23 16:01:30,292 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_2]  INFO [spider] - 浙江邝时展览有限公司,[{'https': '112.66.242.152:51718'}],浙江省通用电子发票,KPF,[]
+2022-05-23 16:01:30,963 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_0]  INFO [spider] - 浙江甬亿盛通贸易有限公司,[{'https': '112.66.242.152:51718'}],浙江省通用电子发票,SPF,[]
+2022-05-23 16:01:31,031 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_4]  INFO [get_data_by_proxy] - get_data error
+2022-05-23 16:01:32,093 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_4]  INFO [dl] - [{'https': '114.102.33.191:28827'}]
+2022-05-23 16:01:32,954 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_1]  INFO [spider] - 舟夜(杭州）科技合伙企业(有限合伙),[{'https': '112.66.242.152:51718'}],浙江省通用电子发票,KPF,[]
+2022-05-23 16:01:33,408 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_2]  INFO [spider] - 浙江邝时展览有限公司,[{'https': '112.66.242.152:51718'}],增值税电子普通发票,SPF,[]
+2022-05-23 16:01:33,773 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_0]  INFO [spider] - 浙江甬亿盛通贸易有限公司,[{'https': '112.66.242.152:51718'}],浙江省通用电子发票,KPF,[]
+2022-05-23 16:01:34,433 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_3]  INFO [spider] - 杭州渊宸电子商务有限公司,[{'https': '112.66.242.152:51718'}],浙江省通用电子发票,KPF,[]
+2022-05-23 16:01:35,645 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_1]  INFO [spider] - 舟夜(杭州）科技合伙企业(有限合伙),[{'https': '112.66.242.152:51718'}],增值税电子普通发票,SPF,[]
+2022-05-23 16:01:36,060 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_2]  INFO [spider] - 浙江邝时展览有限公司,[{'https': '112.66.242.152:51718'}],增值税电子普通发票,KPF,[]
+2022-05-23 16:01:36,065 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_0]  INFO [spider] - 浙江甬亿盛通贸易有限公司,[{'https': '112.66.242.152:51718'}],增值税电子普通发票,SPF,[]
+2022-05-23 16:01:36,679 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_3]  INFO [spider] - 杭州渊宸电子商务有限公司,[{'https': '112.66.242.152:51718'}],增值税电子普通发票,SPF,[]
+2022-05-23 16:01:37,520 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_1]  INFO [spider] - 舟夜(杭州）科技合伙企业(有限合伙),[{'https': '112.66.242.152:51718'}],增值税电子普通发票,KPF,[]
+2022-05-23 16:01:37,772 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_0]  INFO [spider] - 浙江甬亿盛通贸易有限公司,[{'https': '112.66.242.152:51718'}],增值税电子普通发票,KPF,[]
+2022-05-23 16:01:37,807 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_2]  INFO [spider] - 浙江邝时展览有限公司,[{'https': '112.66.242.152:51718'}],增值税普通发票,SPF,[]
+2022-05-23 16:01:38,306 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_3]  INFO [spider] - 杭州渊宸电子商务有限公司,[{'https': '112.66.242.152:51718'}],增值税电子普通发票,KPF,[]
+2022-05-23 16:01:38,967 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_1]  INFO [spider] - 舟夜(杭州）科技合伙企业(有限合伙),[{'https': '112.66.242.152:51718'}],增值税普通发票,SPF,[]
+2022-05-23 16:01:39,104 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_0]  INFO [spider] - 浙江甬亿盛通贸易有限公司,[{'https': '112.66.242.152:51718'}],增值税普通发票,SPF,[]
+2022-05-23 16:01:39,124 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_2]  INFO [spider] - 浙江邝时展览有限公司,[{'https': '112.66.242.152:51718'}],增值税普通发票,KPF,[]
+2022-05-23 16:01:39,686 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_3]  INFO [spider] - 杭州渊宸电子商务有限公司,[{'https': '112.66.242.152:51718'}],增值税普通发票,SPF,[]
+2022-05-23 16:01:40,101 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_4]  INFO [get_data_by_proxy] - get_data error
+2022-05-23 16:01:40,449 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_0]  INFO [spider] - 浙江甬亿盛通贸易有限公司,[{'https': '112.66.242.152:51718'}],增值税普通发票,KPF,[]
+2022-05-23 16:01:40,643 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_1]  INFO [spider] - 舟夜(杭州）科技合伙企业(有限合伙),[{'https': '112.66.242.152:51718'}],增值税普通发票,KPF,[]
+2022-05-23 16:01:40,659 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_2]  INFO [spider] - 浙江邝时展览有限公司,[{'https': '112.66.242.152:51718'}],增值税专用发票,SPF,[]
+2022-05-23 16:01:41,155 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_4]  INFO [dl] - [{'https': '182.87.29.176:54107'}]
+2022-05-23 16:01:41,302 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_3]  INFO [spider] - 杭州渊宸电子商务有限公司,[{'https': '112.66.242.152:51718'}],增值税普通发票,KPF,[]
+2022-05-23 16:01:42,053 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_2]  INFO [spider] - 浙江邝时展览有限公司,[{'https': '112.66.242.152:51718'}],增值税专用发票,KPF,[]
+2022-05-23 16:01:42,054 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_1]  INFO [spider] - 舟夜(杭州）科技合伙企业(有限合伙),[{'https': '112.66.242.152:51718'}],增值税专用发票,SPF,[]
+2022-05-23 16:01:42,579 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_3]  INFO [spider] - 杭州渊宸电子商务有限公司,[{'https': '112.66.242.152:51718'}],增值税专用发票,SPF,[]
+2022-05-23 16:01:42,809 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_0]  INFO [spider] - 浙江甬亿盛通贸易有限公司,[{'https': '112.66.242.152:51718'}],增值税专用发票,SPF,[]
+2022-05-23 16:01:43,416 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_2]  INFO [spider] - 浙江邝时展览有限公司,[{'https': '112.66.242.152:51718'}],增值税电子专票,SPF,[]
+2022-05-23 16:01:43,439 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_1]  INFO [spider] - 舟夜(杭州）科技合伙企业(有限合伙),[{'https': '112.66.242.152:51718'}],增值税专用发票,KPF,[]
+2022-05-23 16:01:43,911 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_3]  INFO [spider] - 杭州渊宸电子商务有限公司,[{'https': '112.66.242.152:51718'}],增值税专用发票,KPF,[]
+2022-05-23 16:01:44,164 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_0]  INFO [spider] - 浙江甬亿盛通贸易有限公司,[{'https': '112.66.242.152:51718'}],增值税专用发票,KPF,[]
+2022-05-23 16:01:44,809 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_1]  INFO [spider] - 舟夜(杭州）科技合伙企业(有限合伙),[{'https': '112.66.242.152:51718'}],增值税电子专票,SPF,[]
+2022-05-23 16:01:44,821 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_2]  INFO [spider] - 浙江邝时展览有限公司,[{'https': '112.66.242.152:51718'}],增值税电子专票,KPF,[]
+2022-05-23 16:01:45,200 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_3]  INFO [spider] - 杭州渊宸电子商务有限公司,[{'https': '112.66.242.152:51718'}],增值税电子专票,SPF,[]
+2022-05-23 16:01:45,425 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_0]  INFO [spider] - 浙江甬亿盛通贸易有限公司,[{'https': '112.66.242.152:51718'}],增值税电子专票,SPF,[]
+2022-05-23 16:01:46,111 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_2]  INFO [spider] - 浙江邝时展览有限公司,[{'https': '112.66.242.152:51718'}],通用机打发票,SPF,[]
+2022-05-23 16:01:46,492 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_3]  INFO [spider] - 杭州渊宸电子商务有限公司,[{'https': '112.66.242.152:51718'}],增值税电子专票,KPF,[]
+2022-05-23 16:01:46,644 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_1]  INFO [spider] - 舟夜(杭州）科技合伙企业(有限合伙),[{'https': '112.66.242.152:51718'}],增值税电子专票,KPF,[]
+2022-05-23 16:01:46,898 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_0]  INFO [spider] - 浙江甬亿盛通贸易有限公司,[{'https': '112.66.242.152:51718'}],增值税电子专票,KPF,[]
+2022-05-23 16:01:47,416 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_2]  INFO [spider] - 浙江邝时展览有限公司,[{'https': '112.66.242.152:51718'}],通用机打发票,KPF,[]
+2022-05-23 16:01:47,805 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_3]  INFO [spider] - 杭州渊宸电子商务有限公司,[{'https': '112.66.242.152:51718'}],通用机打发票,SPF,[]
+2022-05-23 16:01:48,008 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_1]  INFO [spider] - 舟夜(杭州）科技合伙企业(有限合伙),[{'https': '112.66.242.152:51718'}],通用机打发票,SPF,[]
+2022-05-23 16:01:48,162 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_0]  INFO [spider] - 浙江甬亿盛通贸易有限公司,[{'https': '112.66.242.152:51718'}],通用机打发票,SPF,[]
+2022-05-23 16:01:48,777 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_2]  INFO [spider] - 浙江邝时展览有限公司,[{'https': '112.66.242.152:51718'}],机动车销售发票,SPF,[]
+2022-05-23 16:01:49,468 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_0]  INFO [spider] - 浙江甬亿盛通贸易有限公司,[{'https': '112.66.242.152:51718'}],通用机打发票,KPF,[]
+2022-05-23 16:01:49,578 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_1]  INFO [spider] - 舟夜(杭州）科技合伙企业(有限合伙),[{'https': '112.66.242.152:51718'}],通用机打发票,KPF,[]
+2022-05-23 16:01:49,723 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_3]  INFO [spider] - 杭州渊宸电子商务有限公司,[{'https': '112.66.242.152:51718'}],通用机打发票,KPF,[]
+2022-05-23 16:01:49,941 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_4]  INFO [get_data_by_proxy] - get_data error
+2022-05-23 16:01:50,154 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_2]  INFO [spider] - 浙江邝时展览有限公司,[{'https': '112.66.242.152:51718'}],机动车销售发票,KPF,[]
+2022-05-23 16:01:50,785 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_0]  INFO [spider] - 浙江甬亿盛通贸易有限公司,[{'https': '112.66.242.152:51718'}],机动车销售发票,SPF,[]
+2022-05-23 16:01:51,000 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_4]  INFO [dl] - [{'https': '182.87.29.47:21577'}]
+2022-05-23 16:01:51,095 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_1]  INFO [spider] - 舟夜(杭州）科技合伙企业(有限合伙),[{'https': '112.66.242.152:51718'}],机动车销售发票,SPF,[]
+2022-05-23 16:01:52,173 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_3]  INFO [spider] - 杭州渊宸电子商务有限公司,[{'https': '112.66.242.152:51718'}],机动车销售发票,SPF,[]
+2022-05-23 16:01:52,176 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_0]  INFO [spider] - 浙江甬亿盛通贸易有限公司,[{'https': '112.66.242.152:51718'}],机动车销售发票,KPF,[]
+2022-05-23 16:01:52,416 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_1]  INFO [spider] - 舟夜(杭州）科技合伙企业(有限合伙),[{'https': '112.66.242.152:51718'}],机动车销售发票,KPF,[]
+2022-05-23 16:01:52,491 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_2]  INFO [spider] - 浙江邝时展览有限公司,[{'https': '112.66.242.152:51718'}],二手车发票,SPF,[]
+2022-05-23 16:01:53,435 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_0]  INFO [spider] - 浙江甬亿盛通贸易有限公司,[{'https': '112.66.242.152:51718'}],二手车发票,SPF,[]
+2022-05-23 16:01:53,439 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_3]  INFO [spider] - 杭州渊宸电子商务有限公司,[{'https': '112.66.242.152:51718'}],机动车销售发票,KPF,[]
+2022-05-23 16:01:53,690 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_1]  INFO [spider] - 舟夜(杭州）科技合伙企业(有限合伙),[{'https': '112.66.242.152:51718'}],二手车发票,SPF,[]
+2022-05-23 16:01:53,859 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_2]  INFO [spider] - 浙江邝时展览有限公司,[{'https': '112.66.242.152:51718'}],二手车发票,KPF,[]
+2022-05-23 16:01:54,134 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_4]  INFO [spider] - 杭州市西湖区何达商务服务部,[{'https': '182.87.29.47:21577'}],浙江省通用电子发票,SPF,[]
+2022-05-23 16:01:54,775 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_3]  INFO [spider] - 杭州渊宸电子商务有限公司,[{'https': '112.66.242.152:51718'}],二手车发票,SPF,[]
+2022-05-23 16:01:54,779 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_0]  INFO [spider] - 浙江甬亿盛通贸易有限公司,[{'https': '112.66.242.152:51718'}],二手车发票,KPF,[]
+2022-05-23 16:01:54,986 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_1]  INFO [spider] - 舟夜(杭州）科技合伙企业(有限合伙),[{'https': '112.66.242.152:51718'}],二手车发票,KPF,[]
+2022-05-23 16:01:55,180 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_2]  INFO [spider] - 浙江邝时展览有限公司,[{'https': '112.66.242.152:51718'}],手工核定发票,SPF,[]
+2022-05-23 16:01:56,060 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_3]  INFO [spider] - 杭州渊宸电子商务有限公司,[{'https': '112.66.242.152:51718'}],二手车发票,KPF,[]
+2022-05-23 16:01:56,061 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_0]  INFO [spider] - 浙江甬亿盛通贸易有限公司,[{'https': '112.66.242.152:51718'}],手工核定发票,SPF,[]
+2022-05-23 16:01:56,304 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_1]  INFO [spider] - 舟夜(杭州）科技合伙企业(有限合伙),[{'https': '112.66.242.152:51718'}],手工核定发票,SPF,[]
+2022-05-23 16:01:56,507 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_2]  INFO [spider] - 浙江邝时展览有限公司,[{'https': '112.66.242.152:51718'}],手工核定发票,KPF,[]
+2022-05-23 16:01:57,314 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_0]  INFO [spider] - 浙江甬亿盛通贸易有限公司,[{'https': '112.66.242.152:51718'}],手工核定发票,KPF,[]
+2022-05-23 16:01:57,381 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_3]  INFO [spider] - 杭州渊宸电子商务有限公司,[{'https': '112.66.242.152:51718'}],手工核定发票,SPF,[]
+2022-05-23 16:01:57,756 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_4]  INFO [spider] - 杭州市西湖区何达商务服务部,[{'https': '182.87.29.47:21577'}],浙江省通用电子发票,KPF,[]
+2022-05-23 16:01:57,807 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_2]  INFO [spider] - 浙江邝时展览有限公司,[{'https': '112.66.242.152:51718'}],出租车发票,SPF,[]
+2022-05-23 16:01:58,515 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_0]  INFO [spider] - 浙江甬亿盛通贸易有限公司,[{'https': '112.66.242.152:51718'}],出租车发票,SPF,[]
+2022-05-23 16:01:58,582 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_1]  INFO [spider] - 舟夜(杭州）科技合伙企业(有限合伙),[{'https': '112.66.242.152:51718'}],手工核定发票,KPF,[]
+2022-05-23 16:01:58,733 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_3]  INFO [spider] - 杭州渊宸电子商务有限公司,[{'https': '112.66.242.152:51718'}],手工核定发票,KPF,[]
+2022-05-23 16:01:59,168 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_2]  INFO [spider] - 浙江邝时展览有限公司,[{'https': '112.66.242.152:51718'}],出租车发票,KPF,[]
+2022-05-23 16:01:59,751 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_0]  INFO [spider] - 浙江甬亿盛通贸易有限公司,[{'https': '112.66.242.152:51718'}],出租车发票,KPF,[]
+2022-05-23 16:01:59,827 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_1]  INFO [spider] - 舟夜(杭州）科技合伙企业(有限合伙),[{'https': '112.66.242.152:51718'}],出租车发票,SPF,[]
+2022-05-23 16:02:00,043 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_4]  INFO [spider] - 杭州市西湖区何达商务服务部,[{'https': '182.87.29.47:21577'}],增值税电子普通发票,SPF,[]
+2022-05-23 16:02:00,081 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_3]  INFO [spider] - 杭州渊宸电子商务有限公司,[{'https': '112.66.242.152:51718'}],出租车发票,SPF,[]
+2022-05-23 16:02:01,075 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_1]  INFO [spider] - 舟夜(杭州）科技合伙企业(有限合伙),[{'https': '112.66.242.152:51718'}],出租车发票,KPF,[]
+2022-05-23 16:02:01,138 [DESKTOP-O9339PH] [invoice_over] [MainThread]  INFO [main] - receive message: {"taxPwd":"MQTEHI","companyId":"401577","companyName":"希弘（杭州）新媒体有限公司","handleTaxName":"林娴哲","localDate":"2022-05-22","taxAccount":"91330108MA7DULT74M","handleTaxPwd":"abc12306","tenant_code":"ZH-383-20191217145410"}
+2022-05-23 16:02:01,143 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_4]  INFO [spider] - 杭州市西湖区何达商务服务部,[{'https': '182.87.29.47:21577'}],增值税电子普通发票,KPF,[]
+2022-05-23 16:02:01,178 [DESKTOP-O9339PH] [invoice_over] [MainThread]  INFO [main] - receive message: {"taxPwd":"LF781102","companyId":"403243","companyName":"杭州司里丽芙文化传媒有限公司","handleTaxName":"徐丹丹","localDate":"2022-05-22","taxAccount":"91330108MA7CJP5R5H","handleTaxPwd":"zxc12345","tenant_code":"ZH-383-20191217145410"}
+2022-05-23 16:02:01,263 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_3]  INFO [spider] - 杭州渊宸电子商务有限公司,[{'https': '112.66.242.152:51718'}],出租车发票,KPF,[]
+2022-05-23 16:02:02,233 [DESKTOP-O9339PH] [invoice_over] [MainThread]  INFO [main] - receive message: {"taxPwd":"zlcw1401","companyId":"79725","companyName":"杭州芃莱国际贸易有限公司","handleTaxName":"姜喜","localDate":"2022-05-22","taxAccount":"91330110MA7DH5WD8M","handleTaxPwd":"JX961125","tenant_code":"ZH-383-20191217145410"}
+2022-05-23 16:02:02,362 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_4]  INFO [spider] - 杭州市西湖区何达商务服务部,[{'https': '182.87.29.47:21577'}],增值税普通发票,SPF,[]
+2022-05-23 16:02:03,302 [DESKTOP-O9339PH] [invoice_over] [MainThread]  INFO [main] - receive message: {"taxPwd":"wblmss75396","companyId":"398059","companyName":"杭州折射角文化传媒有限公司","handleTaxName":"林思昊","localDate":"2022-05-22","taxAccount":"91330108MA7DBDMQXR","handleTaxPwd":"wblmss75396","tenant_code":"ZH-383-20191217145410"}
+2022-05-23 16:02:03,632 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_4]  INFO [spider] - 杭州市西湖区何达商务服务部,[{'https': '182.87.29.47:21577'}],增值税普通发票,KPF,[]
+2022-05-23 16:02:05,073 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_4]  INFO [spider] - 杭州市西湖区何达商务服务部,[{'https': '182.87.29.47:21577'}],增值税专用发票,SPF,[]
+2022-05-23 16:02:06,223 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_4]  INFO [spider] - 杭州市西湖区何达商务服务部,[{'https': '182.87.29.47:21577'}],增值税专用发票,KPF,[]
+2022-05-23 16:02:07,332 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_4]  INFO [spider] - 杭州市西湖区何达商务服务部,[{'https': '182.87.29.47:21577'}],增值税电子专票,SPF,[]
+2022-05-23 16:02:08,360 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_4]  INFO [spider] - 杭州市西湖区何达商务服务部,[{'https': '182.87.29.47:21577'}],增值税电子专票,KPF,[]
+2022-05-23 16:02:09,463 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_4]  INFO [get_data_by_proxy] - get_data error
+2022-05-23 16:02:10,517 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_4]  INFO [dl] - [{'https': '117.57.20.203:43486'}]
+2022-05-23 16:02:13,200 [DESKTOP-O9339PH] [invoice_over] [ThreadPoolExecutor-0_2]  INFO [handle_message] - 希弘（杭州）新媒体有限公司获取cookie中失败,retry0次

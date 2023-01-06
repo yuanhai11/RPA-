@@ -3,4 +3,6 @@
 *.a
 *.xml
 __pycache__
+*.png
+*.jpg
 
